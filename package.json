@@ -2,6 +2,7 @@
     "name": "project",
     "version": "1.0.0",
     "author": "Khramova Anastassia",
+    "repository": "https://github.com/AKhramova/universityProject.git",
     "scripts": {
         "start": "gulp",
         "clean": "gulp clean",

@@ -1,0 +1,41 @@
+.contact-information{
+    margin: 0 10vw;
+    width: 80%;
+    height: 75vh;
+    &__contact-info{
+        margin-top: 4%;
+        width: 40%;
+        display: inline-block;
+    }
+    &__map{
+        width: 55%;
+        height: 450px;
+        float: right;
+        border: 0;
+    }
+}
+
+.contact-info{
+    &__name-company, &__address, &__number, &__email{
+        margin: 5% 0;
+        color: $color-text-bg;
+    }
+    &__name-company, &__email{
+        font-weight: 700;
+    }
+    &__feedback{
+        padding: 5%;
+        width: 40%;
+        letter-spacing: 0.1em;
+        background-color: $color-text-bg;
+        color: $main-text-color;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1367px) {
+    .contact-information{
+        &__map{
+            height: 60vh;
+        }
+    }
+}

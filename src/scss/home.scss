@@ -1,0 +1,318 @@
+.block1{
+  &__title{
+    position: absolute;
+    display: inline-block;
+    top: 50%; 
+    transform: translate(0, -50%);
+    font-size: 64px;
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    padding: 5%;
+  }
+  &__photo{
+    width: 45%;
+    margin-left: 39.5%;
+    margin-bottom: 5%;
+  }
+}
+
+.block2{
+  margin-top: 2%;
+  &__about{
+    display: flex;
+    height: 48vh;
+    background-color: $about-bg;
+  }
+  &__main-tasks{
+    margin-top: 10%;
+  }
+}
+
+.about{
+  &__block-pictures{
+    height: 110%;
+    width: 270px;
+    margin-left: 10%;
+  }
+  &__photo3{
+    width: 30%;
+    height: 90%;
+    margin: 2%;
+  }
+  &__info{
+    width: 37%;
+    height: 80%;
+  }
+}
+
+.block-pictures{
+  &__photo1, &__photo2{
+    width: 100%;
+  }
+  &__photo1{
+    height: 265px;
+  }
+  &__photo2{
+    height: 140px;
+    margin-top: 10%;
+  }
+}
+
+.info{
+  &__title{
+    margin: 0;
+    margin-bottom: 2%;
+    color: $title-about-color;
+    font-size: 64px;
+    line-height: 64px;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+.main-tasks{
+  &__title{
+    color: $title-about-color;
+    font-size: 64px;
+    margin: 0;
+  }
+  &__task1, &__task2{
+    display: inline-flex;
+    width: 40%;
+    height: 20vh;
+  }
+  &__task2{
+    width: 60%;
+    float: right;
+  }
+}
+
+.numbers{
+  margin: 0;
+  font-family: 'SF Pro Display';
+  font-weight: 900;
+  font-size: 150px;
+  color: $color-numbers;
+}
+
+.info-task{
+  display: flex;
+  align-items: center;
+  margin: 0 3%;
+  font-weight: 400;
+  font-size: 22px;
+  color: $color-text-bg;
+}
+
+.projects{
+  margin-top: 7vh;
+  padding-bottom: 7%;
+  &__title{
+    font-size: 64px;
+    padding: 1% 0;
+    color: $title-about-color;
+    margin: 0;
+  }
+  &__block1-pictures, &__block2-pictures{
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__btn-projects{
+    padding: 2% 4%;
+    float: right;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    background: $color-text-bg;
+    color: $main-text-color;
+  }
+}
+
+.block1-pictures{
+  &__info-card, &__image{
+    height: 40vh;
+    width: 48.5%;
+  }
+  &__info-card{
+    background: $color-text-bg;
+  }
+}
+
+.info-card{
+  &__img{
+    position: relative;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+  }
+  &__text{
+    position: absolute;
+    margin: 0;
+    padding: 3% 5%;
+    width: 400px;
+    font-size: 64px;
+    font-weight: 700;
+    color: $main-text-color;
+  }
+}
+
+.block2-pictures{
+  &__photo1, &__photo2, &__photo3{
+    height: 40vh;
+  }
+  &__photo1{
+    width: 22%;
+  }
+  &__photo2{
+    width: 41%;
+  }
+  &__photo3{
+    width: 31%;
+  }
+}
+
+.contacts{
+  margin: 10vh 0 5% 0;
+  padding: 2% 0 4% 0;
+  &__title{
+    font-family: 'TT Hoves';
+    font-size: 64px;
+    line-height: 64px;
+    color: $title-about-color;
+    margin: 0;
+  }
+  &__form{
+    width: 32%;
+    margin-top: 2%;
+    display: inline-block;
+  }
+  &__photo{ 
+    height: 50vh;
+    width: 50vw;
+    margin-top: 2%;
+    float: right;
+  }
+}
+
+.inpts{
+  height: 44px;
+  width: 100%;
+  background: $bg-inpbts;
+}
+
+.form{
+  &__name{
+    margin-top: 0;
+  }
+  &__message{
+    height: 150px;
+    resize: none;
+  }
+  &__message::placeholder{
+    margin-top: -5%;
+  }
+  &__confirmation{
+    font-family: 'TT Hoves';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.03em;
+    color: $color-text-bg;
+  }
+  &__btn{
+    display: flex;
+    padding: 5% 7%;
+    background: $color-text-bg;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: $main-text-color;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1367px) {
+  .block1{
+    &__title{
+      top: 32%; 
+      font-size: 80px;
+    }
+    &__photo{
+      width: 50%;
+      margin-left: 42%;
+    }
+  }
+
+  .about{
+    &__block-pictures{
+      margin-left: 3%;
+    }
+  }
+
+  .info{
+    &__title{
+      font-size: 50px;
+    }
+    &__text{
+      font-size: 18px;
+    }
+  }
+
+  .main-tasks{
+    &__title{
+      font-size: 50px;
+    }
+    &__task1, &__task2{
+      height: 17vh;
+    }
+  }
+
+  .numbers{
+    font-size: 130px;
+  }
+
+  .info-task{
+    font-size: 18px;
+  }
+
+  .projects{
+    margin-top: 5vh;
+    &__title{
+      font-size: 50px;
+    }
+    &__btn-projects{
+      padding: 1% 3%;
+    }
+  }
+
+  .block1-pictures{
+    &__info-card, &__image{
+      height: 30vh;
+    }
+  }
+
+  .info-card{
+    &__text{
+      font-size: 50px;
+    }
+  }
+
+  .block2-pictures{
+    &__photo1, &__photo2, &__photo3{
+      height: 30vh;
+    }
+  }
+
+  .contacts{
+    &__title{
+      font-size: 50px;
+    }
+    &__photo{ 
+      height: 45vh;
+    }
+  }
+}

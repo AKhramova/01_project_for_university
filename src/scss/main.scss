@@ -1,0 +1,79 @@
+@import "vars";
+@import "components/header";
+@import "home";
+@import "components/footer";
+@import "gallery";
+@import "projects";
+@import "project2";
+@import "certificates";
+@import "contacts";
+
+html {
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'TT Hoves', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+a{
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+input, textarea, button{
+  border: none;
+  outline: none;
+  margin: 2% 0;
+  cursor: pointer;
+}
+
+input::placeholder, textarea::placeholder{
+  padding-top: 2%;
+  padding-left: 4%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: $color-placeholder;
+}
+
+input[type=checkbox]{
+  width: 20px;
+  height: 20px;
+  margin: 0 2%;
+}
+
+.main-content, .gallery-content, .all-projects, .project-parking, .container-certificates{
+  margin: 0 10vw;
+  width: 80%;
+}
+
+.title-gallery, .title-projects, .parking, .title, .title-info{
+  margin-top: 4%;
+  font-size: 50px;
+  font-family: 'TT Hoves';
+  font-weight: 700;
+  line-height: 64px;
+  &__first{
+    color: $title-about-color;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1367px) {
+  input::placeholder, textarea::placeholder{
+    font-size: 14px;
+  }
+
+  .title-gallery, .title-projects, .parking, .title{
+    font-size: 45px;
+    &__first{
+      font-size: 60px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.all-projects{
+  padding-bottom: 20vh;
+  &__project1, &__project2, &__project3{
+    padding: 30px 0;
+  }
+}
+
+.img{
+    height: 40vh;
+    width: 50%;
+    display: inline-block;
+}
+
+
+.container-info{
+    height: 40vh;
+    width: 48%;
+    background-color: $about-bg;
+    float: right;
+    padding-left: 2%;
+    &__name-project{
+        width: 100%;
+        font-size: 40px;
+        line-height: 50px;
+        color: $title-about-color;
+    }
+    &__info{
+        margin: 4% 0 5% 0;
+        width: 100%;
+    }
+    &__add-info{
+        padding: 4% 7%;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        background-color: white;
+        color: $color-text-bg;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1367px) {
+    .img{
+        height: 37vh;
+    }
+    
+    .container-info{
+        height: 37vh;
+        &__name-project{
+            font-size: 36px;
+        }
+        &__info{
+            margin-bottom: 10%;
+        }
+    }
+}

@@ -1,17 +1,17 @@
-Все команды запускать в консоли в папке проекта.
+Run all commands in the console in the project folder.
 
-Перед использованием запустить команду:
-    npm i / yarn install
+Run command before use:
+    npm i /yarn install
 
-запуск сборки:
+build run:
     npm run start / yarn start
-    данная команда запускает исполнение gulp task
+    this command starts the execution of gulp task
 
-если при запуске на экране выводит "Cannot GET /":
-    просто обновите страницу
+if at startup it displays "Cannot GET /":
+    just refresh the page
 
 
-удаление папки build:
+deleting the build folder:
     npm run clean / yarn start clean
 
 
